@@ -29,12 +29,14 @@ class Processor extends Thread{
 
 public class App {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
 		Processor proc1 = new Processor();
 		proc1.start(); //tells the thread class to run the code in the RUN() method..
 		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		scan.nextLine();
 		
 		proc1.shutdown();
